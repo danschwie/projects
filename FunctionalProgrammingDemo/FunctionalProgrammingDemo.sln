@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionsAsFirstClassObjects", "FunctionsAsFirstClassObjects\FunctionsAsFirstClassObjects.csproj", "{F4234727-12E1-45FA-B43E-B126E3FBB9F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Closures", "Closures\Closures.csproj", "{099F0E39-BC74-4EB3-982B-EFB1F6323BF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapReduce", "MapReduce\MapReduce.csproj", "{20CCF08D-CC52-49DE-8567-CBCFEADC36CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleExamples", "SimpleExamples\SimpleExamples.csproj", "{EBA0A93F-41C5-4AFE-8E82-269592F68926}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4234727-12E1-45FA-B43E-B126E3FBB9F3}.Debug|x86.ActiveCfg = Debug|x86
+		{F4234727-12E1-45FA-B43E-B126E3FBB9F3}.Debug|x86.Build.0 = Debug|x86
+		{F4234727-12E1-45FA-B43E-B126E3FBB9F3}.Release|x86.ActiveCfg = Release|x86
+		{F4234727-12E1-45FA-B43E-B126E3FBB9F3}.Release|x86.Build.0 = Release|x86
+		{099F0E39-BC74-4EB3-982B-EFB1F6323BF3}.Debug|x86.ActiveCfg = Debug|x86
+		{099F0E39-BC74-4EB3-982B-EFB1F6323BF3}.Debug|x86.Build.0 = Debug|x86
+		{099F0E39-BC74-4EB3-982B-EFB1F6323BF3}.Release|x86.ActiveCfg = Release|x86
+		{099F0E39-BC74-4EB3-982B-EFB1F6323BF3}.Release|x86.Build.0 = Release|x86
+		{20CCF08D-CC52-49DE-8567-CBCFEADC36CF}.Debug|x86.ActiveCfg = Debug|x86
+		{20CCF08D-CC52-49DE-8567-CBCFEADC36CF}.Debug|x86.Build.0 = Debug|x86
+		{20CCF08D-CC52-49DE-8567-CBCFEADC36CF}.Release|x86.ActiveCfg = Release|x86
+		{20CCF08D-CC52-49DE-8567-CBCFEADC36CF}.Release|x86.Build.0 = Release|x86
+		{EBA0A93F-41C5-4AFE-8E82-269592F68926}.Debug|x86.ActiveCfg = Debug|x86
+		{EBA0A93F-41C5-4AFE-8E82-269592F68926}.Debug|x86.Build.0 = Debug|x86
+		{EBA0A93F-41C5-4AFE-8E82-269592F68926}.Release|x86.ActiveCfg = Release|x86
+		{EBA0A93F-41C5-4AFE-8E82-269592F68926}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

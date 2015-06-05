@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>WinSCP.NET</id>
+    <version>5.1.1.0</version>
+    <title />
+    <authors>long.tang@aiviet.com</authors>
+    <owners>long.tang@aiviet.com</owners>
+    <projectUrl>http://www.winscp.net/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The WinSCP .NET assembly winscp.dll is a .NET wrapper around WinSCP’s scripting interface that allows your code to connect to a remote machine and manipulate remote files over SFTP, SCP, and FTP sessions from .NET languages, such as C#, VB.NET, PowerShell and others, or from environments supporting .NET addons, such as SQL Server Integration Services (SSIS).
+
+The assembly is also exposed to COM, and as such it can be used from variety of other programming languages and development environments–e.g., WSH-hosted active scripting languages like JScript and VBScript, Visual Basic for Applications (VBA), Perl, and Python.</description>
+  </metadata>
+</package>
