@@ -1,0 +1,67 @@
+﻿@model  DataLayer.Entities.PortfolioHistory
+
+@using (Html.BeginForm("Create", "Finance", null, FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    <fieldset>
+        <legend></legend>
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Add Entry</h3>
+        </div>
+        <div class="modal-body">
+            <div class="control-group clearfix">
+                @Html.LabelFor(m => m.MarketDate, new { @class = "control-label" })
+                <div class="controls">
+                    @Html.TextBoxFor(m => m.MarketDate, new { @class = "input-xlarge" })
+                    @Html.ValidationMessageFor(m => m.MarketDate, null, new { @class = "help-inline" })
+                </div>
+            </div>
+            <div class="control-group clearfix">
+                @Html.LabelFor(m => m.EmployerSponsored, new { @class = "control-label" })
+                <div class="controls">
+                    @Html.TextBoxFor(m => m.EmployerSponsored, new { @class = "input-xlarge" })
+                    @Html.ValidationMessageFor(m => m.EmployerSponsored, null, new { @class = "help-inline" })
+                </div>
+            </div>
+            <div class="control-group clearfix">
+                @Html.LabelFor(m => m.RolloverIRA, new { @class = "control-label" })
+                <div class="controls">
+                    @Html.TextBoxFor(m => m.RolloverIRA, new { @class = "input-xlarge" })
+                    @Html.ValidationMessageFor(m => m.RolloverIRA, null, new { @class = "help-inline" })
+                </div>
+            </div>
+            <div class="control-group clearfix">
+                @Html.LabelFor(m => m.TraditionalIRA, new { @class = "control-label" })
+                <div class="controls">
+                    @Html.TextBoxFor(m => m.TraditionalIRA, new { @class = "input-xlarge" })
+                    @Html.ValidationMessageFor(m => m.TraditionalIRA, null, new { @class = "help-inline" })
+                </div>
+            </div>
+            <div class="control-group clearfix">
+                @Html.LabelFor(m => m.RothIRA, new { @class = "control-label" })
+                <div class="controls">
+                    @Html.TextBoxFor(m => m.RothIRA, new { @class = "input-xlarge" })
+                    @Html.ValidationMessageFor(m => m.RothIRA, null, new { @class = "help-inline" })
+                </div>
+            </div>
+            <div class="control-group clearfix">
+                @Html.LabelFor(m => m.SepIRA, new { @class = "control-label" })
+                <div class="controls">
+                    @Html.TextBoxFor(m => m.SepIRA, new { @class = "input-xlarge" })
+                    @Html.ValidationMessageFor(m => m.SepIRA, null, new { @class = "help-inline" })
+                </div>
+            </div>
+            <div class="control-group clearfix">
+                @Html.LabelFor(m => m.HSA, new { @class = "control-label" })
+                <div class="controls">
+                    @Html.TextBoxFor(m => m.HSA, new { @class = "input-xlarge" })
+                    @Html.ValidationMessageFor(m => m.HSA, null, new { @class = "help-inline" })
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="submit">Save</button>
+            <a href="#" class="btn" data-dismiss="modal">Cancel</a>
+        </div>
+    </fieldset>
+}

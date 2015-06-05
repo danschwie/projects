@@ -1,0 +1,360 @@
+﻿html, body
+{
+    height: 100%;
+    min-height: 100%;
+}
+
+table
+{
+    border: solid 1px #e8eef4;
+    border-collapse: collapse;
+}
+
+    table td
+    {
+        border: solid 1px #e8eef4;
+        padding: 5px;
+    }
+
+    table th
+    {
+        background: #e8eef4;
+        border: solid 1px #e8eef4;
+        padding: 6px 5px;
+        text-align: left;
+    }
+
+.logo
+{
+    float: left;
+    padding: 6px 30px 0 0;
+}
+
+.title
+{
+    margin: 0 0 20px;
+}
+
+.display-group-name-label
+{
+    margin: 8px 10px 0 0;
+}
+
+.form-horizontal .form-actions
+{
+    background: none;
+}
+
+.form-actions
+{
+    padding: 17px 0 18px;
+    background: none;
+}
+
+.last-modified
+{
+    margin: 0;
+}
+
+.modal form
+{
+    margin: 0;
+}
+
+.ui-jqgrid .ui-jqgrid-labels
+{
+    border-bottom: 1px solid #ddd;
+}
+
+.altRow
+{
+    background-color: #f9f9f9;
+    background-image: none;
+}
+
+th.ui-th-column > div
+{
+    padding-bottom: 0.5em;
+}
+
+td.ui-search-input > select
+{
+    line-height: none;
+    height: 100%;
+    padding: 0px 0px;
+}
+
+.ui-jqgrid tr.jqgrow td
+{
+    padding: 0 0 0 6px;
+}
+
+.ui-jqgrid .action-column a
+{
+    margin-left: 4px;
+}
+
+    .ui-jqgrid .action-column a:first-child
+    {
+        margin-left: 0;
+    }
+
+.ui-jqgrid table, .ui-jqgrid table td
+{
+    border: none;
+}
+
+.ui-jqgrid .ui-state-hover a
+{
+    color: #000 !important;
+}
+
+.jqgrid-pitems
+{
+    text-align: center;
+}
+
+#jqgrid-pitems-select, #jqgrid-pitems, .ui-pager-control
+{
+    height: 34px;
+}
+
+.thin-pager #jqgrid-pitems, .thin-pager .ui-pager-control
+{
+    height: 24px;
+}
+
+.ui-jqgrid .ui-pg-selbox
+{
+    height: 26px;
+}
+
+.ui-pg-table input[type="text"]
+{
+    border: none;
+    width: 30px;
+    height: 18px;
+}
+
+.ui-pg-table select
+{
+    border: none;
+    width: 50px;
+}
+
+#modal-select
+{
+    width: 940px;
+    margin-left: -470px;
+}
+
+    #modal-select .grid-container
+    {
+        width: 900px;
+    }
+
+.modal-footer .btn
+{
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+
+.modal-footer .last-modified
+{
+    float: left;
+}
+
+.button-unlock
+{
+    margin: 5px 4px 0 0 !important;
+}
+
+.lead-export-controls select
+{
+    float: left;
+}
+
+.lead-export-buttons
+{
+    float: left;
+    margin: 170px 6px;
+    width: 36px;
+}
+
+    .lead-export-buttons span
+    {
+        display: block;
+        float: left;
+        margin: 0 0 6px;
+    }
+
+.login-reset-links
+{
+    margin: 10px 0 0;
+}
+
+.query-filter legend
+{
+    border: none;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+.userCreateRoles ul
+{
+    border: 1px solid #ccc;
+    min-height: 30px;
+    padding: 5px;
+    width: 258px;
+}
+
+.trapped-leads-tool .modal
+{
+    top: 1% !important;
+    margin-top: 0px !important;
+    width: 640px !important;
+    margin-left: -320px !important;
+}
+
+    .trapped-leads-tool .modal .modal-body
+    {
+        max-height: 600px !important;
+    }
+
+.ui-jqgrid tr.jqgrow td.cell-bold
+{
+    font-weight: bold;
+}
+
+.badleadData > td
+{
+    background: #a00;
+    color: #fff;
+}
+
+    .badleadData > td > a
+    {
+        color: #fff;
+    }
+
+.ui-jqgrid tr.jqgrow td
+{
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    overflow: hidden;
+    height: auto;
+    vertical-align: top;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.ui-jqgrid .ui-jqgrid-bdiv
+{
+    overflow: hidden;
+}
+
+.ui-jqgrid .ui-jqgrid-htable th div
+{
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+}
+
+.ui-jqgrid-btable .ui-state-highlight
+{
+    background: #d9edf7;
+}
+
+.ui-jqgrid .loading
+{
+    top: 15% !important;
+    left: 45% !important;
+    width: 10% !important;
+}
+
+.icon-refresh-ajax
+{
+    background-position: 0 !important;
+    background-image: url(images/icon-refresh-ajax-loader.gif) !important;
+}
+
+.treeview .ui-jqgrid-btable .ui-widget-content .ui-icon
+{
+    background-image: url(themes/flick/images/ui-icons_0073ea_256x240.png);
+}
+
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error
+{
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    padding-left: 4px;
+}
+/*body {
+	padding-top: 60px;
+	padding-bottom: 40px
+}*/
+.selectlist-list
+{
+    list-style: none;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.selectlist-item
+{
+    background: #08c;
+    color: #fff;
+    padding: 0.2em 0.3em;
+    margin: 1px 0;
+}
+
+    .selectlist-item i
+    {
+        cursor: pointer;
+        float: right;
+        margin: 2px;
+    }
+
+.ie8 .ui-jqgrid .ui-jqgrid-bdiv
+{
+    overflow-y: hidden;
+}
+
+.navbar .brand
+{
+    color: #fff;
+}
+
+.last-modified
+{
+    font-size: 10px;
+}
+
+.imageButton
+{
+    height: 30px;
+    width: 30px;
+}
+
+.login-reset-links
+{
+    font-size: 11px;
+}
+
+.clearfix:after
+{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}

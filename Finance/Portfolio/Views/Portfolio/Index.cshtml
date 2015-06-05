@@ -1,0 +1,53 @@
+﻿@model List<DataLayer.Entities.PortfolioHistory>
+
+@{
+    ViewBag.Title = "PortfolioHistory";
+}
+
+<h1>Portfolio History</h1>
+
+<div id="grid-container" class="grid-container">
+    <table id="jqgrid-items"></table>
+</div>
+<br />
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Create New Entry</button>
+
+@section Scripts {
+    <script type="text/javascript">
+    jQuery(function ($)
+    {
+        $('#jqgrid-items').jqGrid({
+            url: '@Url.Action("GetGridData", "Portfolio")/',
+            colNames: ['MarketDate', 'EmployerSponsored', 'RolloverIRA', 'TraditionalIRA', 'RothIRA', 'SepIRA', 'HSA'],
+            colModel: [
+                  { name: 'MarketDate', index: 'MarketDate', width: 150, align: 'left' }
+                , { name: 'EmployerSponsored', index: 'EmployerSponsored', width: 175, align: 'left' }
+                , { name: 'RolloverIRA', index: 'RolloverIRA', align: 'left' }
+                , { name: 'TraditionalIRA', index: 'TraditionalIRA', align: 'left' }
+                , { name: 'RothIRA', index: 'RothIRA', align: 'left' }
+                , { name: 'SepIRA', index: 'SepIRA', align: 'left' }
+                , { name: 'HSA', index: 'HSA', align: 'left' }
+            ],
+            cmTemplate: { title: false },
+            sortname: 'MarketDate',
+            ajaxGridOptions: { cache: false },
+            datatype: 'json',
+            mtype: 'GET',
+            sortorder: 'asc',
+            viewrecords: true,
+            altRows: true,
+            altclass: 'altRow',
+            hoverrows: false,
+            autowidth: true,
+            forceFit: true,
+            height: '100%',
+            beforeSelectRow: function (rowid, e)
+            {
+                return false;
+            }
+        });
+
+        Finance.Portfolio.initPortfolioHistoryList('jqgrid-items', 'jqgrid-pitems', 'grid-container', '@Url.Action("Create")');
+    });
+    </script>
+}
