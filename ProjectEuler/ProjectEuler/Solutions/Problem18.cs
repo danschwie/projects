@@ -6,39 +6,19 @@ using ProjectEuler.Interfaces;
 using MathLibrary.Utilities;
 using MathLibrary;
 using MathLibrary.Objects;
+using MathLibrary.Utilities.TreeUtilities;
 
 namespace ProjectEuler.Solutions
 {
     public class Problem18 : IIntProblem
     {
-        private int _runningTotal;
+        private new List<List<int>> _numbers;
 
         public int Solve()
         {
-            var tree = Utility.MakeBinaryTreeFromFile(@"C:\Users\dschwie\Desktop\working\projects\ProjectEuler\ProjectEuler\Resources\Problem18\Problem18.txt");
-            Process(tree.Vertices[0]);
+            List<List<int>> numbers = Utility.MakeListOfListsFromFile(@"C:\Users\dschwie\Desktop\working\projects\ProjectEuler\ProjectEuler\Resources\Problem18\Problem18.txt");
 
-            return _runningTotal;
-        }
-
-        private void Process(Vertex<int> vertex)
-        {
-            Console.WriteLine(vertex.Value);
-            _runningTotal += vertex.Value;
-
-            if (vertex.ReachableVertices.Count != 0)
-            {
-                Process(GetChildWithMaxValue(vertex));
-            }
-
-            return;
-        }
-
-        private Vertex<int> GetChildWithMaxValue(Vertex<int> vertex)
-        {
-            return vertex.ReachableVertices[0].Value > vertex.ReachableVertices[1].Value 
-                ? vertex.ReachableVertices[0]
-                : vertex.ReachableVertices[1];
+            return BinaryTreeUtilities.FindMaxPathSum(numbers);
         }
     }
 }

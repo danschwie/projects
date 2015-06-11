@@ -62,11 +62,12 @@
   <ItemGroup>
     <Compile Include="BigInt.cs" />
     <Compile Include="Objects\Graph.cs" />
-    <Compile Include="Objects\Graph_old.cs" />
+    <Compile Include="Objects\BinaryTreeNode.cs" />
     <Compile Include="Objects\Vertex.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\BigIntUtility.cs" />
     <Compile Include="Utilities\SequenceGenerator.cs" />
+    <Compile Include="Utilities\TreeUtilities\BinaryTreeUtilities.cs" />
     <Compile Include="Utilities\Utility.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

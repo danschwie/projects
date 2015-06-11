@@ -356,57 +356,58 @@ namespace MathLibrary.Utilities
             return !Math.Sqrt(n).ToString().Contains('.');
         }
 
-        public static Graph<int> MakeBinaryTreeFromFile(string filePath)
+        public static List<List<int>> MakeListOfListsFromFile(string filePath)
         {
             var line = "";
-            var rows = new List<List<int>>();
-            var vertices = new List<List<Vertex<int>>>();
+            var listOfLists = new List<List<int>>();
 
-            using (StreamReader reader = new StreamReader(filePath))
+            using (var reader = new StreamReader(filePath))
             {
                 while ((line = reader.ReadLine()) != null)
                 {
                     var numbers = new List<int>(line.Split(' ').Select(i => Convert.ToInt32(i)));
-                    vertices.Add((from n in numbers select new Vertex<int>(n)).ToList());
+                    listOfLists.Add(numbers);
                 }
             }
 
-            var graph = new Graph<int>();
+            return listOfLists;
+        }
+
+        public static BinaryTreeNode<int> MakeBinaryTreeFromFile(string filePath)
+        {
+            var line = "";
+            var nodes = new List<List<BinaryTreeNode<int>>>();
+
+            using (var reader = new StreamReader(filePath))
+            {
+                while ((line = reader.ReadLine()) != null)
+                {
+                    var numbers = new List<int>(line.Split(' ').Select(i => Convert.ToInt32(i)));
+                    nodes.Add((from n in numbers select new BinaryTreeNode<int>(n)).ToList());
+                }
+            }
+
             var rowCount = 0;
             var cellCount = 0;
 
-            foreach (var vertexRow in vertices)
+            foreach (var nodeRow in nodes)
             {
                 cellCount = 0;
 
-                foreach (Vertex<int> vertex in vertexRow)
+                foreach (BinaryTreeNode<int> node in nodeRow)
                 {
-                    if (rowCount != vertices.Count - 1)
+                    node.RowNum = rowCount;
+                    node.CellNum = cellCount;
+
+                    if (rowCount != nodes.Count - 1)
                     {
-                        if (rowCount == 0)
-                        {
-                            vertex.HasParent = false;
-                        }
-                        else
-                        {
-                            vertex.HasParent = true;
-                        }
 
-                        vertex.IsLeaf = false;
+                        node.LeftChild = nodes[rowCount + 1][cellCount];
+                        node.RightChild = nodes[rowCount + 1][cellCount + 1];
 
-                        var firstChild = vertices[rowCount + 1][cellCount];
-                        var secondChild = vertices[rowCount + 1][cellCount + 1];
-
-                        vertex.AddReachableVertex(firstChild);
-                        vertex.AddReachableVertex(secondChild);
+                        node.LeftChild.RightParent = node;
+                        node.RightChild.LeftParent = node;
                     }
-                    else
-                    {
-                        vertex.IsLeaf = true;
-                        vertex.HasParent = true;
-                    }
-
-                    graph.Add(vertex);
 
                     cellCount++;
                 }
@@ -414,7 +415,7 @@ namespace MathLibrary.Utilities
                 rowCount++;
             }
 
-            return graph;
+            return nodes[0][0];
         }
 
         public static Graph<int> MakeSquareLattice(int numSquaresPerSide)

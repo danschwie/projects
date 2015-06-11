@@ -7,11 +7,11 @@ using ProjectEuler.Shared;
 
 namespace ProjectEuler.Solutions
 {
-  public class Problem28 : IIntProblem
-  {
-    public int Solve()
+    public class Problem28 : IIntProblem
     {
-      return 0;
+        public int Solve()
+        {
+            return 0;
+        }
     }
-  }
 }

@@ -85,7 +85,11 @@
     <Compile Include="Solutions\Problem19.cs" />
     <Compile Include="Solutions\Problem2.cs" />
     <Compile Include="Solutions\Problem20.cs" />
+    <Compile Include="Solutions\Problem26.cs" />
+    <Compile Include="Solutions\Problem24.cs" />
     <Compile Include="Solutions\Problem22.cs" />
+    <Compile Include="Solutions\Problem29.cs" />
+    <Compile Include="Solutions\Problem32.cs" />
     <Compile Include="Solutions\Problem3.cs" />
     <Compile Include="Solutions\Problem4.cs" />
     <Compile Include="Solutions\Problem5.cs" />
@@ -138,11 +142,15 @@
     <Content Include="Resources\Problem11\Problem11Vertical.txt" />
     <Content Include="Resources\Problem13\Problem13.txt" />
     <Content Include="Resources\Problem14\log.txt" />
+    <Content Include="Resources\Problem18\Problem18-test.txt" />
     <Content Include="Resources\Problem18\Problem18.txt" />
     <Content Include="Resources\Problem22\p022_names.txt" />
     <Content Include="Resources\Problem28\notes.txt" />
     <Content Include="Resources\Problem59\cipher.txt" />
     <Content Include="Resources\Problem59\plaintext.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Problem67\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
