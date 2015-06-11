@@ -1,5 +1,5 @@
-﻿using MathLibrary.Utilities;
-using MathLibrary.Utilities.TreeUtilities;
+﻿using DataStructures.Utilities.TreeUtilities;
+using DataStructures.Utilities;
 using ProjectEuler.Interfaces;
 using System.Collections.Generic;
 
@@ -13,7 +13,7 @@ namespace ProjectEuler.Solutions
         {
             List<List<int>> numbers = Utility.MakeListOfListsFromFile(@"C:\Users\dschwie\Desktop\working\projects\ProjectEuler\ProjectEuler\Resources\Problem18\Problem18.txt");
 
-            return BinaryTreeUtilities.FindMaxPathSum(numbers);
+            return BinaryTreeUtility.FindMaxPathSum(numbers);
         }
     }
 }

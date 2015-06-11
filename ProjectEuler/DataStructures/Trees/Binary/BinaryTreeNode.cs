@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace MathLibrary.Objects
+namespace DataStructures.Trees.Binary
 {
     public class BinaryTreeNode<T>
     {
         private T _value;
-        private List<Vertex<T>> _reachableVertices;
         private BinaryTreeNode<T> _leftChild;
         private BinaryTreeNode<T> _rightChild;
         private BinaryTreeNode<T> _leftParent;
@@ -35,16 +35,16 @@ namespace MathLibrary.Objects
             }
         }
 
-        public BinaryTreeNode<T> LeftChild 
-        { 
-            get 
+        public BinaryTreeNode<T> LeftChild
+        {
+            get
             {
                 return _leftChild;
-            } 
-            set 
+            }
+            set
             {
                 _leftChild = value;
-            } 
+            }
         }
 
         public BinaryTreeNode<T> RightChild

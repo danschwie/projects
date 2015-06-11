@@ -1,4 +1,4 @@
-﻿using MathLibrary.Utilities;
+﻿using DataStructures.Utilities;
 using ProjectEuler.Interfaces;
 
 namespace ProjectEuler.Solutions

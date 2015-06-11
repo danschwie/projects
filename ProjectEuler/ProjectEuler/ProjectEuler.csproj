@@ -130,6 +130,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataStructures\DataStructures.csproj">
+      <Project>{f0cc9b83-ca6d-4997-a385-e109981b97d8}</Project>
+      <Name>DataStructures</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MathLibrary\MathLibrary.csproj">
       <Project>{B41C637D-7767-4A26-8D88-4E338FDF140D}</Project>
       <Name>MathLibrary</Name>

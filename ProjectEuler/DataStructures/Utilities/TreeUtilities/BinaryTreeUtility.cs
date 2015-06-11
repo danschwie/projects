@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MathLibrary.Utilities.TreeUtilities
+namespace DataStructures.Utilities.TreeUtilities
 {
-    public class BinaryTreeUtilities
+    public class BinaryTreeUtility
     {
         /// <summary>
         /// Dynamic programming. 

@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MathLibrary.Utilities;
+using MathUtil = MathLibrary.Utilities;
+using DataStructureUtil = DataStructures.Utilities;
 
 namespace ProjectEuler.Tests
 {
@@ -14,13 +15,13 @@ namespace ProjectEuler.Tests
         [TestMethod]
         public void TestIsPrime()
         {
-            Assert.IsTrue(Utility.IsPrime(DEFAULT_PRIME));
+            Assert.IsTrue(MathUtil.Utility.IsPrime(DEFAULT_PRIME));
         }
 
         [TestMethod]
         public void TestPrimeFactors()
         {
-            List<long> primeNumbers = Utility.PrimeFactors(DEFAULT_COMPOSITE);
+            List<long> primeNumbers = MathUtil.Utility.PrimeFactors(DEFAULT_COMPOSITE);
 
             Assert.AreEqual(3, primeNumbers.Count);
 
@@ -32,7 +33,7 @@ namespace ProjectEuler.Tests
         [TestMethod]
         public void TestPrimeNumbers()
         {
-            List<long> primeNumbers = Utility.PrimeNumbers(DEFAULT_PRIME);
+            List<long> primeNumbers = MathUtil.Utility.PrimeNumbers(DEFAULT_PRIME);
 
             Assert.AreEqual(7, primeNumbers.Count);
 
@@ -48,50 +49,50 @@ namespace ProjectEuler.Tests
         [TestMethod]
         public void TestSmallestPrimeFactor()
         {
-            Assert.AreEqual(2, Utility.SmallestPrimeFactor(DEFAULT_COMPOSITE));
+            Assert.AreEqual(2, MathUtil.Utility.SmallestPrimeFactor(DEFAULT_COMPOSITE));
         }
 
         [TestMethod]
         public void TestLargestPrimeFactor()
         {
-            Assert.AreEqual(17, Utility.LargestPrimeFactor(DEFAULT_COMPOSITE));
+            Assert.AreEqual(17, MathUtil.Utility.LargestPrimeFactor(DEFAULT_COMPOSITE));
         }
 
         [TestMethod]
         public void TestCountPrimeFactors()
         {
-            Assert.AreEqual(3, Utility.CountPrimeFactors(DEFAULT_COMPOSITE));
+            Assert.AreEqual(3, MathUtil.Utility.CountPrimeFactors(DEFAULT_COMPOSITE));
         }
 
         [TestMethod]
         public void TestSumPrimeFactors()
         {
-            Assert.AreEqual(21, Utility.SumPrimeFactors(DEFAULT_COMPOSITE));
+            Assert.AreEqual(21, MathUtil.Utility.SumPrimeFactors(DEFAULT_COMPOSITE));
         }
 
         [TestMethod]
         public void TestCountPrimeNumbers()
         {
-            Assert.AreEqual(3, Utility.CountPrimeFactors(DEFAULT_COMPOSITE));
+            Assert.AreEqual(3, MathUtil.Utility.CountPrimeFactors(DEFAULT_COMPOSITE));
         }
 
         [TestMethod]
         public void TestSumPrimeNumbers()
         {
-            Assert.AreEqual(58, Utility.SumPrimeNumbers(DEFAULT_PRIME));
+            Assert.AreEqual(58, MathUtil.Utility.SumPrimeNumbers(DEFAULT_PRIME));
         }
 
         [TestMethod]
         public void TestFibonacci()
         {
-            SequenceGenerator.PrintFibonacci(5);
+            MathUtil.SequenceGenerator.PrintFibonacci(5);
         }
 
         [TestMethod]
         public void TestMakeLattice()
         {
             var numSquaresPerSide = 2;
-            var g = Utility.MakeSquareLattice(2);
+            var g = DataStructureUtil.Utility.MakeSquareLattice(2);
 
             Assert.AreEqual(g.Vertices.Count, numSquaresPerSide);
         }

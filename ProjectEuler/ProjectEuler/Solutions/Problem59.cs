@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using MathLibrary.Utilities;
+using DataStructures.Utilities;
 
 namespace ProjectEuler.Solutions
 {
