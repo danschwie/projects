@@ -14,7 +14,7 @@ namespace ProjectEulerUI
     {
         static void Main(string[] args)
         {
-            SolveIntResultProblem(new Problem18());
+            SolveIntResultProblem(new Problem67());
         }
 
         static void SolveIntResultProblem(IIntProblem problemToExecute)

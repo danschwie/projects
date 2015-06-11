@@ -81,6 +81,7 @@
     <Compile Include="Solutions\Problem1.cs" />
     <Compile Include="Solutions\Problem10.cs" />
     <Compile Include="Solutions\Problem15.cs" />
+    <Compile Include="Solutions\Problem67.cs" />
     <Compile Include="Solutions\Problem18.cs" />
     <Compile Include="Solutions\Problem19.cs" />
     <Compile Include="Solutions\Problem2.cs" />
@@ -148,10 +149,9 @@
     <Content Include="Resources\Problem28\notes.txt" />
     <Content Include="Resources\Problem59\cipher.txt" />
     <Content Include="Resources\Problem59\plaintext.txt" />
+    <Content Include="Resources\Problem67\p067_triangle.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\Problem67\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
