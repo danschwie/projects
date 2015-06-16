@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using ProjectEuler.Solutions;
-using MathLibrary.Objects;
 using MathLibrary.Utilities;
 using MathLibrary;
 using ProjectEuler.BaseClasses;

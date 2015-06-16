@@ -94,7 +94,7 @@ namespace ProjectEuler.Tests
             var numSquaresPerSide = 2;
             var g = DataStructureUtil.Utility.MakeSquareLattice(2);
 
-            Assert.AreEqual(g.Vertices.Count, numSquaresPerSide);
+            Assert.AreEqual(g.Vertices.Count, MathUtil.Utility.Square(numSquaresPerSide));
         }
     }
 }

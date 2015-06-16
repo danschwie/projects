@@ -14,6 +14,15 @@ namespace DataStructures.Utilities.TreeUtilities
         /// Since each node must be visited exactly once, the runtime complexity of this approach is O(n^2).
         /// A brute force approach on the other hand requires that every path is checked. Since a binary tree of depth n 
         /// has 2^n-1 paths, the runtime complexity of a brute force approach is O(2^n).
+        /// 
+        /// From http://www.codechef.com/wiki/tutorial-dynamic-programming
+        /// Dynamic programming (usually referred to as DP ) is a very powerful technique to solve a particular class of problems. 
+        /// It demands very elegant formulation of the approach and simple thinking and the coding part is very easy. 
+        /// The idea is very simple, If you have solved a problem with the given input, then save the result for future reference, so as to 
+        /// avoid solving the same problem again.. shortly 'Remember your Past' :) .  
+        /// If the given problem can be broken up in to smaller sub-problems and these smaller subproblems are in turn divided in to still-smaller 
+        /// ones, and in this process, if you observe some over-lappping subproblems, then its a big hint for DP. Also, the optimal solutions 
+        /// to the subproblems contribute to the optimal solution of the given problem ( referred to as the Optimal Substructure Property ).
         /// </summary>
         public static int FindMaxPathSum(List<List<int>> numbers)
         {
@@ -33,6 +42,8 @@ namespace DataStructures.Utilities.TreeUtilities
                         maxSumToParent = Math.Max(maxSumToParent, GetRightParent(row, cell, numbers));
                     }
 
+                    // Dynamic programming component.
+                    // Remember max sum to this node by updating the node's value so we don't need to recompute the entire path for its' children.
                     numbers[row][cell] += maxSumToParent;
                 }
             }

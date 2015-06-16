@@ -10,7 +10,9 @@ namespace ConsoleApplication
     {
         static void Main(string[] args)
         {
+            string s = "23423,54543,56454";
 
+            List<string> l = s.Split(',').ToList();
         }
     }
 }
